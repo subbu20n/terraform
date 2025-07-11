@@ -8,7 +8,7 @@ resource "aws_instance" "roboshop" {
     }
 }
 
-resource "aws_security_group" "allow_all" {
+resource "aws_security_group" "allow_all_change" {
     name = "allow_all_change"
     description = "allow all traffic"
 
