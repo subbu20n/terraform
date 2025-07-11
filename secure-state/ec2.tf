@@ -4,7 +4,7 @@ resource "aws_instance" "roboshop" {
     vpc_security_group_ids = [aws_security_group.allow_all_change.id]
 
     tags = {
-        Name = "HelloWorlddd"
+        Name = "HelloWorldd"
     }
 }
 
