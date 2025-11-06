@@ -4,7 +4,7 @@ resource "aws_instance" "roboshop" {
     vpc_security_group_ids = [aws_security_group.allow_all_change.id]
 
     tags = {
-        Name = "HelloWorldddd"  #for every time we did change will create a new file in s3 buckets secure-state-tests lo secure lo file create avutundi ok 
+        Name = "HelloWorldd"  #for every time we did change will create a new file in s3 buckets secure-state-tests lo secure lo file create avutundi ok 
     }
 }
 
