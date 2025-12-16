@@ -16,7 +16,7 @@ variable "ec2_tags" {
 
 variable "sg_name" {
     type = string 
-    default = "vars-file-allow"
+    default = "allow-all"
 }
 
 variable "sg_description" {

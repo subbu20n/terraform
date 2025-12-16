@@ -38,3 +38,4 @@ resource "aws_security_group" "allow_all" {
 
     tags = var.ec2_tags 
 }
+

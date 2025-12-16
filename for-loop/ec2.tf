@@ -6,7 +6,7 @@ resource "aws_instance" "roboshop" {
     #instance_type = each.value 
     vpc_security_group_ids = [aws_security_group.allow_all.id] 
 
-    tags = {
+    tags = {  
         Name = each.key  
     }
 } 
@@ -14,7 +14,7 @@ resource "aws_instance" "roboshop" {
 resource "aws_security_group" "allow_all" {
     name = var.sg_name 
     description = var.sg_description 
-
+ 
     ingress {
         from_port = var.from_port 
         to_port = var.to_port 

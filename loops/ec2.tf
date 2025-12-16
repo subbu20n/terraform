@@ -5,9 +5,9 @@ resource "aws_instance" "roboshop" {
     vpc_security_group_ids = [aws_security_group.allow_all.id] 
 
     tags = {
-        Name = var.instances [count.index]
+        Name = var.instances [count.index] 
     }
-}
+} 
 
 resource "aws_security_group" "allow_all" {
     name = var.sg_name 

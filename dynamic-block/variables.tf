@@ -62,11 +62,12 @@ variable "egress_ports" {
 }
 
 variable "ingress_ports" {
+    type = list(map)
     default = [
         {
-            from_port = "22" 
+            from_port = "22"  
             to_port = "22"
-        },
+        }, 
         {
             from_port = "8080"
             to_port   = "8080"
@@ -76,5 +77,6 @@ variable "ingress_ports" {
             to_port  = "443"
         }
     ]
-}
+} 
 
+ 
