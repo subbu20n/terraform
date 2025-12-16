@@ -8,6 +8,6 @@ terraform {
 }
 
 provider "aws" {
-    # configuration options 
+    # configuration options  # we can give credentials here 
     region = "us-east-1"
-}
+}    
