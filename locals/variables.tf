@@ -17,6 +17,6 @@ variable "common_tags" {
     }
 }
 
-/*variable "final_name" {
-    default = "${var.project}-${var.environment}-${var.component}"
-}*/ 
+# variable "final_name" {
+#     default  = "${var.project}-${var.environment}-${var.component}" 
+# } 

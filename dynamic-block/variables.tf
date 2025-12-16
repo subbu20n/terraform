@@ -18,7 +18,7 @@ variable "sg_description" {
     default = "allowing all ports from all ip"
 }
 
-variable "sg_name" {
+variable "sg_name" { 
     default = "allow"
 }
 
@@ -62,7 +62,7 @@ variable "egress_ports" {
 }
 
 variable "ingress_ports" {
-    type = list(map)
+    # type = list(map)
     default = [
         {
             from_port = "22"  

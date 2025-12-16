@@ -4,21 +4,21 @@ resource "aws_instance" "roboshop" {
     instance_type = "t3.micro" 
     vpc_security_group_ids = [ aws_security_group.allow_all.id ] 
 
-    tags = merge (
+    tags = merge (  #merging means adding  
          var.common_tags,
          {
             component = var.instances[count.index]
             Name = var.instances[count.index]
          }
     )
-    
+     
 }
 
 resource "aws_security_group" "allow_all" {
     name = var.sg_name  
     description = var.sg_description 
 
-    ingress {
+    ingress { 
         from_port = var.from_port 
         to_port = var.to_port 
         protocol = "-1"
