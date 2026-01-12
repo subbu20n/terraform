@@ -19,7 +19,7 @@ resource "aws_security_group" "allow_all" {
         ipv6_cidr_blocks = ["::/0"]
     }
 
-    egress {
+    egress { 
         from_port = var.from_port 
         to_port   = var.to_port  
         protocol  = "-1" 

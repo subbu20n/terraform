@@ -59,6 +59,8 @@ variable "instances" {
    default = ["mongodb", "redis", "mysql", "rabbitmq"]  # this is for i dont want change i need to keep this for toset making just see result 
 } 
 
+
+
 variable "zone_id" {
     default = "Z06528725AJCPEPL0K7K"
 }

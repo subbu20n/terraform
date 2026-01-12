@@ -13,9 +13,9 @@ provider "aws" {
     profile  = "dev"
 }
 
-provider "aws" {
+provider "aws" { 
     #configuration options 
     alias = "prod"
     profile  = "prod"
 } 
-   
+
