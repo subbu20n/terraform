@@ -55,7 +55,7 @@ variable "instances" {
 variable "zone_id" {
     default = "Z06528725AJCPEPL0K7K"
 }
-
+ 
 variable "domain_name" {
     default = "subbuaws.site"
 }

@@ -34,7 +34,7 @@ variable "to_port" {
     default = "0"
 }
 
-variable "cidr-blocks" {
+variable "cidr_blocks" {
     default = ["0.0.0.0/0"]
 } 
 
