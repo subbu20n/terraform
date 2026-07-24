@@ -14,7 +14,7 @@ resource "aws_security_group" "allow_all" {
     name = "allow_all" 
     description = "allow all traffic" 
 
-    ingress { 
+    ingress {    
         from_port = "0" 
         to_port   = "0" 
         protocol  = "-1" 
